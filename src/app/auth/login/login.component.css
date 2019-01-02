@@ -1,0 +1,30 @@
+.section-form-div {
+  display: block;
+  /* flex-direction: column; */
+  /* background-color: red; */
+  width: 300px;
+  /* margin-left: 30%; */
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+
+}
+
+mat-form-field{
+    display: block;
+    width: 100%;
+}
+
+h1 {
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px !important;
+  height: 52px !important;
+  width: 52px !important;
+  margin: auto;
+  margin-bottom: 0px;
+
+}

@@ -1,1 +1,128 @@
-<p>welcome works</p>
+<mat-drawer-container class="example-container">
+
+  <!-- Side content in welcome page -->
+  <mat-drawer mode="side" opened color="primary">
+
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <i class="material-icons" >
+              landscape
+            </i>
+            <h4>Land</h4>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <!-- <mat-divider></mat-divider> -->
+        <a routerLink="/welcome/land/dashboard">Dashboard</a>
+        <!-- <mat-divider></mat-divider> -->
+        <a routerLink="/welcome/land/add">Add</a>
+        <!-- <mat-divider></mat-divider> -->
+        <a routerLink="/welcome/land/edit">Edit</a>
+        <!-- <mat-divider></mat-divider> -->
+        <a routerLink="/welcome/land/setbuilding">Set building</a>
+
+
+
+
+      </mat-expansion-panel>
+
+
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <i class="material-icons">
+              location_city
+            </i>
+            <h4>Building</h4>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <!-- <mat-divider></mat-divider> -->
+        <a href="">Dashboard</a>
+        <!-- <mat-divider></mat-divider> -->
+        <a href="">Add</a>
+        <!-- <mat-divider></mat-divider> -->
+        <a href="">Edit</a>
+        <!-- <mat-divider></mat-divider> -->
+        <a href="">Set Apartment</a>
+
+      </mat-expansion-panel>
+
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <i class="material-icons">
+              account_balance
+            </i>
+            <h4>Apartment</h4>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <a href="">Dashboard</a>
+        <a href="">Assign</a>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <i class="material-icons">
+              group
+            </i>
+            <h4>Tenants</h4>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <!-- <mat-divider></mat-divider> -->
+        <a href="">Dashboard</a>
+        <!-- <mat-divider></mat-divider> -->
+        <a href="">Add</a>
+        <!-- <mat-divider></mat-divider> -->
+        <a href="">View</a>
+        <!-- <mat-divider></mat-divider> -->
+      </mat-expansion-panel>
+
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <i class="material-icons">
+              payment
+            </i>
+            <h4>Payment</h4>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <a href="">Dashboard</a>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <i class="material-icons">
+              monetization_on
+            </i>
+            <h4>Billing</h4>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <a href="">Dashboard</a>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <i class="material-icons">
+              money
+            </i>
+            <h4>Balance</h4>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <a href="">Dashboard</a>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-drawer>
+
+  <!-- Main content area in welcome page -->
+  <mat-drawer-content>
+    <router-outlet>
+
+    </router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   }
 
   submitAction(form: NgForm) {
-    this.router.navigate(['welcome']);
+    this.router.navigate(['welcome/land/dashboard']);
     console.log(form.value);
 
   }

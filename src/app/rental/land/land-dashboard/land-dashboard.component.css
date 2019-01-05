@@ -3,60 +3,86 @@
   width: 100%;
   /* background-color: red; */
   display: grid;
-  grid-template-columns: 60% auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "tables chartOne""tables chartTwo";
+  grid-template-columns: 55% auto;
+  grid-template-rows: auto;
+  grid-template-areas: "tables chartOne";
   /* align-self: flex-start;
   justify-self: flex-start; */
 
-  /* align-items: center; */
-  /* justify-items: center; */
+  align-items: center;
+  justify-items: center;
+  grid-gap: 0px;
 
 
 
 }
-
-/* #option{
-    float: right;
-} */
 
 
 /* table styling */
 table {
+
   grid-area: tables;
-  margin-left: 8%;
-  margin-top: 150px;
+  /* margin-left: 7%; */
+  /* margin-top: 10%; */
 
-  
+
 
 }
 
-mat-card img {
-  height: 300px;
-  width: 450px;
+mat-card canvas {
+  height: 238px !important;
+  width: 477px !important;
+  display: inline-block !important;
 }
 
-mat-card {
-  height: 300px;
-  width: 450px;
-  /* text-align: center; */
-  /* justify-items: center; */
-  margin: auto;
-  margin-left: 10%;
-  /* margin-left: 50px; */
-  /* grid-area: charts; */
+
+/* #chartOne #chartTwo { */
+/* height: 250px;
+  width: 450px; */
+/* text-align: center; */
+/* justify-items: center; */
+/* margin: auto;
+  margin-left: 10%; */
+/* margin-left: 50px; */
+/* grid-area: charts; */
+
+/* } */
+
+#chartParent {
+  grid-area: "chartOne";
+  margin: 20px;
+  margin-left: 0px !important;
+  border-style: solid;
+  border-color: #3f4bb542;
+  border-width: 1px;
+  /* border-top-color: transparent; */
+  /* border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent; */
+  /* height: auto; */
+  /* overflow: auto; */
+  /* margin: auto; */
+  /* position: fixed;
+  left: 65%;
+  top: 30px; */
+  /* float: left; */
+  width: 85%;
+  text-align: center;
+
+  /* margin-top: 10px; */
+  /* margin-bottom: 40px; */
 
 }
 
 #chartOne {
-  grid-area: chartOne;
-  margin-top: 40px;
+  /* grid-area: chartOne; */
+  margin-top: 10px;
 
 }
 
 #chartTwo {
-  grid-area: chartTwo;
-  margin-top: 50px;
+  /* grid-area: chartTwo; */
+  margin-top: 20px;
 
 }
 

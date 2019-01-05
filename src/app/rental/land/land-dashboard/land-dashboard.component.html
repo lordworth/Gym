@@ -1,12 +1,15 @@
 <section id="mainContainer">
+  <mat-card id="chartParent" color="primary" tabindex="0">
+    <mat-card id="chartOne" tabindex="0">
+      <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+        [chartType]="barChartType"></canvas>
+    </mat-card>
 
-  <mat-card id="chartOne">
-    <img src="../../../../assets/chart.PNG" alt="chart">
-  </mat-card>
-  <mat-card id="chartTwo">
-    <img src="../../../../assets/bar.PNG" alt="bar">
-  </mat-card>
 
+    <mat-card id="chartTwo" tabindex="0">
+      <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType"></canvas>
+    </mat-card>
+  </mat-card>
 
 
   <table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
